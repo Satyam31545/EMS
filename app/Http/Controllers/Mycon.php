@@ -195,8 +195,8 @@ return '1';
 
 
            public function a_update_g_p(request $req){
-         //   echo $req["id"];
-            $emp = employee::find($req["id"])->get();
+           
+            $emp = employee::where('id',$req['id'] )->get();
             return   $emp;
          } 
 
