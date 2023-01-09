@@ -3,6 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+use Illuminate\Support\Facades\DB;
 
 class CreateEmployeesTable extends Migration
 {
@@ -25,6 +26,20 @@ class CreateEmployeesTable extends Migration
             $table->string('address');
             $table->timestamps();
         });
+
+        DB::table('employees')->insert(
+            array(
+                'name' => 'satyam',
+                'email' => 'satyam@gmail.com',
+                'password' => 'satyam',
+                'role' => 1,
+                'salary' => 5000,
+                'desigination' => 'developer',
+                'dob' => '2004-05-05',
+                'address' => 'varaashi'
+         
+            )
+        );
     }
 
     /**

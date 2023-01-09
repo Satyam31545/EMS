@@ -1,7 +1,7 @@
 @extends('layout.main')
 
 @push('title')
-    <title>EMS | Create</title>
+    <title>EMS | Delete</title>
     <style>
         body {
             background-color: #df9ef5;

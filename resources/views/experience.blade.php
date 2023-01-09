@@ -1,7 +1,7 @@
 @extends('layout.main')
 
 @push('title')
-    <title>EMS | Create</title>
+    <title>EMS | Experience</title>
     <style>
         #login {
             height: 100%;
